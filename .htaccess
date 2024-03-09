@@ -1,0 +1,10 @@
+<files ".htaccess">
+    order allow,deny
+    deny from all
+    </files>
+    
+    RewriteEngine On
+    ErrorDocument 404 /error.php
+    
+    RewriteRule ^api public/api.php [L]
+    RewriteRule ^t public/shortlinks.php [L]
